@@ -16,8 +16,8 @@ export default function experience(){
     return(
         <div className="flex text-white overflow-hidden mt-28 list-none">
             <div className="sm:ml-48 flex-row">
-                <h3 className="font-semibold text-3xl mb-10 text-center sm:text-start ">EXPERIENCE</h3>
-                <div className="flex sm:flex-row flex-col justify-center items-center sm:justify-start">
+                <h3 className="font-semibold text-3xl mb-10 text-center">EXPERIENCE</h3>
+                <div className="flex sm:flex-row flex-col justify-center items-center">
                     <div className="grid sm:grid-cols-4 grid-rows-4 gap-10 list-none mt-5">
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
@@ -106,7 +106,7 @@ export default function experience(){
                         </li>
                     </div> 
                 </div>
-                <div className="flex justify-center items-center sm:justify-start">
+                <div className="flex justify-center items-center">
                     <div className="mt-14 text-lg bg-gradient-to-r to-blue-600/10 from-sky-700/10 bg-opacity-10 w-5/6 p-6 rounded-2xl">
                         <h3><span className="text-2xl mr-2">Skills:</span>Python , Java , C , C++ , Html, CSS , JS, React, Node JS, SQL,Assembly Language, Solidity ,ROS, OpenCV,Arduino, TensorFlow, scikit learn, ML , DL , Pandas , NumPy.</h3>
                     </div>
