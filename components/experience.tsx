@@ -91,16 +91,16 @@ export default function experience(){
                             <h3 className="mt-3 text-center">Java</h3>
                         </div>
                     </div>
-                    <div className="sm:flex-row flex-col sm:mb-60 sm:mt-20 ml-2">
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600/10 bg-opacity-10 sm:ml-72 w-96 h-32 mt-10 sm:mt-0">
+                    <div className="sm:flex-row flex-col sm:mb-60 sm:mt-20 w-72">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600/10 bg-opacity-10 sm:ml-72 sm:w-96 h-32 mt-10 sm:mt-0">
                             <h3>GDSC - Google Developer Student Club</h3>
                             <p className="mt-5">Web Dev - Core Member</p>
                         </li>
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600/10 bg-opacity-10 w-96 h-32 mt-10 sm:ml-72">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600/10 bg-opacity-10 sm:w-96 h-32 mt-10 sm:ml-72">
                             <h3>CYSCOM</h3>
                             <p className="mt-5">Technical - Cybersec Analyst</p>
                         </li>
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600/10 bg-opacity-10 w-96 h-32 mt-10 sm:ml-72">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600/10 bg-opacity-10 sm:w-96 h-32 mt-10 sm:ml-72">
                             <h3>Dreadnought Robotics</h3>
                             <p className="mt-5">Programmer  - Programming Team</p>
                         </li>
