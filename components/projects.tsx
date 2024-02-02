@@ -27,7 +27,7 @@ export default function project(){
                         <img src={Learning.src} alt="learning" className="w-96 h-96 rounded-2xl" />
                         <h3 className="text-semibold text-2xl text-center">Decentralized Learning Platform </h3>
                         <p className="text-center mt-10 ">Embrace the decentralized education revolution with our Learning Platform, fueled by blockchain for secure peer-to-peer learning. Liberate from centralized constraints, empower global learners through a borderless ecosystem, and actively shape the future of education!</p>
-                        <button className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 sm:mt-5 sm:ml-36 ml-24"><a href="https://github.com/vijayarun00100/student-performance">Source</a></button>
+                        <button className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 sm:mt-5 sm:ml-40 ml-24"><a href="https://github.com/vijayarun00100/student-performance">Source</a></button>
                     </li>
                     <li className="bg-white/10 sm:w-96 w-72  h-fit ml-8 mr-5 sm:h-11/12 rounded-2xl text-white flex flex-col">
                         <img src={Property.src} alt="Property" className="w-96 h-96 rounded-2xl" />
