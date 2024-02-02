@@ -45,7 +45,7 @@ export default function about(){
                         </ul>
                     </div>
                 </div>
-                <div className="mb-10"></div>
+                <div className="mb-16"></div>
             </div>
         </div>
     );
