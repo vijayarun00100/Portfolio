@@ -14,10 +14,10 @@ import python from "@/public/images/python.png"
 import c from "@/public/images/c.png"
 export default function experience(){
     return(
-        <div className="flex text-white overflow-hidden mt-28 list-none">
+        <div className="flex text-white overflow-hidden mt-28 list-none justify-center items-center">
             <div className="sm:ml-48 flex-row">
                 <h3 className="font-semibold text-3xl mb-10 text-center">EXPERIENCE</h3>
-                <div className="flex sm:flex-row flex-col justify-center items-center">
+                <div className="flex sm:flex-row flex-col justtify-center items-center">
                     <div className="grid sm:grid-cols-4 grid-rows-4 gap-10 list-none mt-5">
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
