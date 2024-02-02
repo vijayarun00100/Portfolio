@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import experience from "./experience";
 export default function Nav() {
   return (
     <div className="flex flex-col sm:flex-row py-3 list-none backdrop-blur-lg backdrop-opacity-100	backdrop-brightness-150 ">
@@ -7,7 +8,7 @@ export default function Nav() {
         <p>Portfolio</p>
       </li>
       <li className="w-32 hover:bg-slate-600 rounded-lg text-center  mr-3 p-1 ml-0 text-white mt-1">
-        <p>Resume</p>
+        <p> Resume</p>
       </li>
       <div className=" sm:w-2/3  bg-sky-700 dark:bg-sky-600 rounded-md hover:opacity-100 pointer-events-auto pl-2 ml-0">
         <div className="flex	text-white text-left pl-5 pt-1 mt-1  antialiased font-medium ">

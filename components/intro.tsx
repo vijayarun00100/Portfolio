@@ -4,15 +4,14 @@ import Avatar from "@/public/images/vijay.png"
 export default function intro(){
     return(
         <div className="flex overflow-hidden">
-            <div className=" absolute bg-blue-700/10 w-96 bg-opacity-10 rounded-full h-96 blur-2xl mt-20 ml-20 rotate-45 mr-32"></div>
-                <div className="flex md:flex-auto md:ml-20 md:mr-10 items-center justify-center">
-                    <div className="flex-col text-white items-start mt-32 z-10 mr-52">
+            <div className="sm:absolute sm:bg-blue-700/10 sm:w-96 sm:bg-opacity-10 sm:rounded-full sm:h-96 sm:blur-2xl sm:mt-20 sm:ml-20 sm:rotate-45 sm:mr-44"></div>
+                <div className="flex md:ml-60 md:mr-10 items-center justify-center sm:flex-row flex-col">
+                    <div className=" text-white mt-32 z-10 ml-3 sm:mr-80 sm:w-6/12">
                             <p className="text-white text-4xl">HI🖖<span className="italic">,</span><br />I'm Vijay Arun</p>
-                            <p className="mt-10 text-xl">Excited to explore new opportunities, contribute to AI advancements,<br/> and utilize skills for innovative solutions in a dynamic environment.</p>
-                            <p className="mt-5 text-xl">Seeking opportunities to collaborate with like-minded professionals,<br />applying expertise to real-world problems.<br />Committed to continuous learning and growth in the field of AI.</p>    
+                            <p className="mt-10 text-xl">Excited to explore new opportunities, contribute to AI advancements, and utilize skills for innovative solutions in a dynamic environment.</p>
+                            <p className="mt-5 text-xl">Seeking opportunities to collaborate with like-minded professionals,applying expertise to real-world problems.Committed to continuous learning and growth in the field of AI.</p>    
                     </div>
-                    <img src={Avatar.src} className="w-62 h-80 mt-32 z-10" alt="man"/>
-                    <div className="absolute bg-blue-800/10 w-96 h-42 bg-opacity-10 rounded-full h-96 blur-3xl rotate-45 right-0 mt-96"></div>
+                    <img src={Avatar.src} className="w-62 h-80 mt-24 sm:mt-32 z-10" alt="man"/>
                 </div>
         </div>
     );
