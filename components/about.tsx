@@ -16,7 +16,7 @@ export default function about(){
                         <img src={Work.src} alt="man with laptop" className="sm:w-80 sm:mt-36 sm:mt-42 sm:ml-10 mt-10"></img>
                     </div>
                     <div className="flex justify-center items-center">
-                        <ul className="sm:mr-10 m:w-11/12 sm:mt-0 sm:ml-0 sm:w-full w-40">
+                        <ul className="sm:mr-10 m:w-11/12 sm:mt-0 sm:ml-0 sm:w-full w-72">
                                 <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 sm:mt-10 mt-20 sm:mr-0 ">
                                     <img src={Cursor.src} alt="cursor" className="w-12 h-12"></img>
                                     <h3>Front End</h3>
