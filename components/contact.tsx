@@ -7,7 +7,7 @@ import Linkedin from "@/public/images/linkedin.png";
 import Instagram from "@/public/images/instagram.png"
 export default function contact(){
     return(
-        <div className="bg-gradient-to-r from-blue-900/20 to-blue-500/20 bg-opacity-10 w-screen h-80 flex">
+        <div className="bg-gradient-to-r from-blue-900/20 to-blue-500/20 bg-opacity-10 w-screen h-80 flex mt-10">
             <div className="flex flex-row">
                 <div className="flex flex-col">
                     <h3 className="text-slate-400 text-4xl ml-32 mt-9">Get in Touch❕</h3>
