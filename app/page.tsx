@@ -11,8 +11,12 @@ export default function Home() {
       <Nav />
       <Intro />
       <About />
-      <Experience />
-      <Project />
+      <section id="experience">
+        <Experience />
+      </section> 
+      <section id="explore">
+        <Project />
+      </section>
       <Contact />
     </div>
   );

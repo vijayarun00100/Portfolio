@@ -13,7 +13,7 @@ export default function about(){
                 <div className="flex sm:flex-row flex-col">
                     <div className=" flex-row sm:flex-col sm:w-1/2">
                         <p className="text-white font-semibold text-4xl mt-24 text-center sm:mr-64">About</p>
-                        <img src={Work.src} alt="man with laptop" className="sm:w-80 sm:mt-36 sm:mt-42 sm:ml-10 mt-10"></img>
+                        <img src={Work.src} alt="man with laptop" className="sm:w-80 sm:mt-36 sm:mt-42 sm:ml-10 mt-10" loading="lazy"></img>
                     </div>
                     <div className="flex justify-center items-center">
                         <ul className="sm:mr-10 m:w-11/12 sm:mt-0 sm:ml-0 sm:w-full w-72">

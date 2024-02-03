@@ -18,7 +18,7 @@ export default function Nav() {
         <div className="flex	text-white text-left pl-5 pt-1 mt-1  antialiased font-medium ">
           <h1>Vijay Arunachalam</h1>
           <button className=" hover:bg-sky-400 hover:px-1 hover:pl-2 px-1.5 py-0.5 rounded-md text-center ml-auto mr-2 mb-1	p-2 hover:h-auto">
-            <Link href="/explore">
+            <Link href="#explore">
               Explore 🌍
             </Link>
           </button>
@@ -26,7 +26,7 @@ export default function Nav() {
         </div>
       </div>
       <li className="w-32 hover:bg-slate-600 rounded-lg text-center  ml-3 mr-3 p-1 text-white mt-1">
-        <Link href="/experience">
+        <Link href="#experience">
             <p>Experience</p>
         </Link>
       </li>

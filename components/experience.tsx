@@ -22,72 +22,72 @@ export default function experience(){
                     <div className="grid sm:grid-cols-4 grid-rows-3 gap-10 list-none mt-5 sm:mt-20">
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={Tf.src} alt="tf" className="w-12 h-14 ml-6 mt-5"></img>
+                                <img src={Tf.src} alt="tf" className="w-12 h-14 ml-6 mt-5" loading="lazy"></img>
                             </div>
                             <p className="mt-3">Tensorflow</p>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={Sl.src} alt="sl" className="w-20 h-20 ml-2 mt-2"></img>
+                                <img src={Sl.src} alt="sl" className="w-20 h-20 ml-2 mt-2" loading="lazy"></img>
                             </div>
                             <p className="mt-3">scikit learn</p>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={reactjs.src} alt="React" className="w-18 h-14 ml-4 mt-5"></img>
+                                <img src={reactjs.src} alt="React" className="w-18 h-14 ml-4 mt-5" loading="lazy"></img>
                             </div>
                             <p className="mt-3">React JS</p>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={Next.src} alt="next" className="w-20 h-20 ml-2 mt-2"></img>
+                                <img src={Next.src} alt="next" className="w-20 h-20 ml-2 mt-2" loading="lazy"></img>
                             </div>
                             <p className="mt-3">Next JS</p>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={tailwind.src} alt="tailwind" className="w-16 mt-7 ml-4"></img>
+                                <img src={tailwind.src} alt="tailwind" className="w-16 mt-7 ml-4" loading="lazy"></img>
                             </div>
                             <p className="mt-3">Tailwind CSS</p>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={opencv.src} alt="opencv" className="w-16 h-18 ml-4 mt-4"></img>
+                                <img src={opencv.src} alt="opencv" className="w-16 h-18 ml-4 mt-4" loading="lazy"></img>
                             </div>
                             <p className="mt-3">Open CV</p>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={js.src} alt="js" className="w-24 h-24 ml-0 mt-0"></img>
+                                <img src={js.src} alt="js" className="w-24 h-24 ml-0 mt-0" loading="lazy"></img>
                             </div>
                             <h3 className="mt-3">JS</h3>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={ros.src} alt="ros" className="w-10 h-10 ml-7 mt-7"></img>
+                                <img src={ros.src} alt="ros" className="w-10 h-10 ml-7 mt-7" loading="lazy"></img>
                             </div>
                             <h3 className="mt-3">ROS</h3>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={sql.src} alt="sql" className="w-14 h-14 ml-6 mt-5"></img>
+                                <img src={sql.src} alt="sql" className="w-14 h-14 ml-6 mt-5" loading="lazy"></img>
                             </div>
                             <h3 className="mt-3 text-center">SQL</h3>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={python.src} alt="python" className="w-14 h-14 ml-5 mt-6"></img>
+                                <img src={python.src} alt="python" className="w-14 h-14 ml-5 mt-6" loading="lazy"></img>
                             </div>
                             <h3 className="mt-3 text-center">Python</h3>
                         </div>
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={c.src} alt="c" className="w-24 h-18 ml-0 mt-5"></img>
+                                <img src={c.src} alt="c" className="w-24 h-18 ml-0 mt-5" loading="lazy"></img>
                             </div>
                             <h3 className="mt-3 text-center">C</h3>
                         </div><div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
-                                <img src={java.src} alt="java" className="w-12 h-12 ml-5 mt-5"></img>
+                                <img src={java.src} alt="java" className="w-12 h-12 ml-5 mt-5" loading="lazy"></img>
                             </div>
                             <h3 className="mt-3 text-center">Java</h3>
                         </div>
