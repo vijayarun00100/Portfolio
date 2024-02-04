@@ -16,10 +16,10 @@ import Link from "next/link"
 export default function experience(){
     return(
         <div className="flex text-white overflow-hidden list-none justify-center items-center">
-            <div className="sm:ml-48 flex-row">
+            <div className="xl:ml-48 md:ml-10 flex-row">
                 <h3 className="font-semibold text-3xl text-center sm:text-left">EXPERIENCE</h3>
                 <div className="flex sm:flex-row flex-col justtify-center items-center">
-                    <div className="grid sm:grid-cols-4 grid-rows-3 gap-10 list-none mt-5 sm:mt-20">
+                    <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-rows-3 gap-10 list-none mt-5 sm:mt-20">
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
                                 <img src={Tf.src} alt="tf" className="w-12 h-14 ml-6 mt-5" loading="lazy"></img>
@@ -92,23 +92,23 @@ export default function experience(){
                             <h3 className="mt-3 text-center">Java</h3>
                         </div>
                     </div>
-                    <div className="sm:flex-row flex-col sm:mt-16 mt-5 w-72 sm:w-96 ">
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 sm:ml-72 sm:w-96 h-32 mt-10 sm:mt-0">
+                    <div className="sm:flex-row flex-col sm:mt-16 mt-5 w-72 xl:w-96 ">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 xl:ml-72 md:ml-10 md:w-72 md:mt-0 lg:ml-20 lg:w-96 xl:w-96 h-32 mt-10 sm:mt-0">
                             <h3>GDSC - Google Developer Student Club</h3>
                             <p className="mt-5">Web Dev - Core Member</p>
                         </li>
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 sm:w-96 h-32 mt-10 sm:ml-72">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 xl:ml-72 md:ml-10 md:w-72 lg:ml-20 lg:w-96 xl:w-96 h-32 mt-10 md:mt-5 xl:mt-10">
                             <h3>CYSCOM</h3>
                             <p className="mt-5">Technical - Cybersec Analyst</p>
                         </li>
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-30 sm:w-96 h-32 mt-10 sm:ml-72">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 xl:ml-72 md:ml-10 md:w-72 lg:ml-20 lg:w-96 xl:w-96 h-32 mt-10 md:mt-5 xl:mt-10">
                             <h3>Dreadnought Robotics</h3>
                             <p className="mt-5">Programmer  - Programming Team</p>
                         </li>
                     </div> 
                 </div>
                 <div className="flex justify-center items-center sm:justify-normal">
-                    <div className="mt-14 text-lg bg-gradient-to-r to-blue-700/10 from-sky-500/10 bg-opacity-30 w-5/6 p-6 rounded-2xl">
+                    <div className="mt-14 text-xl bg-gradient-to-r to-blue-700/10 from-sky-500/10 bg-opacity-30 w-5/6 p-6 rounded-2xl">
                         <h3><span className="text-2xl mr-2">Skills:</span>Python , Java , C , C++ , Html, CSS , JS, React, Node JS, SQL,Assembly Language, Solidity ,ROS, OpenCV,Arduino, TensorFlow, scikit learn, ML , DL , Pandas , NumPy.</h3>
                     </div>
                 </div>
