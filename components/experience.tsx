@@ -92,15 +92,15 @@ export default function experience(){
                         </div>
                     </div>
                     <div className="flex flex-col sm:mt-16 mt-5 w-full ">
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 lg:ml-52 md:ml-14 mr-5 ml-5 sm:mr-10 h-32 mt-10 sm:mt-0">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 lg:ml-52 md:ml-14 md:mr-20 mr-5 ml-5 lg:mr-10 h-32 mt-10 sm:mt-0">
                             <h3>GDSC - Google Developer Student Club</h3>
                             <p className="mt-5">Web Dev - Core Member</p>
                         </li>
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 lg:ml-52 md:ml-14 mr-5 ml-5 sm:mr-10 h-32 mt-10 sm:mt-10">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 lg:ml-52 md:ml-14 md:mr-20 mr-5 ml-5 lg:mr-10 h-32 mt-10 sm:mt-10">
                             <h3>CYSCOM</h3>
                             <p className="mt-5">Technical - Cybersec Analyst</p>
                         </li>
-                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 lg:ml-52 md:ml-14 mr-5 ml-5 sm:mr-10 h-32 mt-10 sm:mt-10">
+                        <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-10 lg:ml-52 md:ml-14 md:mr-20 mr-5 ml-5 lg:mr-10 h-32 mt-10 sm:mt-10">
                             <h3>Dreadnought Robotics</h3>
                             <p className="mt-5">Programmer  - Programming Team</p>
                         </li>
