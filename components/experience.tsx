@@ -12,11 +12,10 @@ import sql from "@/public/images/sql.png"
 import java from "@/public/images/java.png"
 import python from "@/public/images/python.png"
 import c from "@/public/images/c.png"
-import Link from "next/link"
 export default function experience(){
     return(
         <div className="flex text-white overflow-hidden list-none justify-center items-center">
-            <div className="sm:ml-48 md:ml-5 flex-row">
+            <div className="xl:ml-48 md:ml-5 flex-row">
                 <h3 className="font-semibold text-3xl text-center sm:text-left">EXPERIENCE</h3>
                 <div className="flex sm:flex-row flex-col justtify-center items-center">
                     <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-rows-3 gap-20 list-none mt-5 sm:mt-20">
