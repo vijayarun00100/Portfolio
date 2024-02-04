@@ -34,14 +34,14 @@ export default function about(){
                                 <li className="p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-20 mt-10">
                                     <img src={Ml.src} alt="nets" className="w-12 h-12"></img>
                                     <h3>ML & DL</h3>
-                                    <p className="mt-5">I have experience with creating ML and DL models with good accuracy !</p>
+                                    <p className="mt-5">I possess expertise in the development of machine learning (ML) and deep learning (DL) models, consistently achieving notable accuracy levels.</p>
                                 </li>
 
                             <div className=" p-5 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-500 bg-opacity-20 mt-10">
                                 <li>
                                     <img src={Arm.src} alt="arm" className="w-14 h-14"></img>
                                     <h3>Robotics</h3>
-                                    <p className="mt-5">I have experience in working on Bots ,used ROS</p>
+                                    <p className="mt-5">I have practical experience working with bots and have used the Robot Operating System (ROS) in my projects.</p>
                                 </li>
                             </div>
                         </ul>
