@@ -23,7 +23,7 @@ export default function project(){
                         <img src={Student.src} alt="student" className="w-96 h-96 rounded-2xl" loading="lazy"/>
                         <div className="flex flex-col justify-center items-center">
                             <h3 className="text-semibold text-2xl text-center">Students Performance Prediction </h3>
-                            <p className="text-center mt-10 ">Unlock the potential of personalized education with our Students Performance Prediction system. By harnessing data analytics and machine learning, we empower educators to forecast students' academic outcomes, enabling targeted interventions for success.</p>
+                            <p className="text-center mt-10 ">Unlock the potential of personalized education with our Students Performance Prediction system. By harnessing data analytics and machine learning, we empower educators to forecast students' academic outcomes, enabling targeted interventions for success .</p>
                             <button className=" bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 xl:mt-11 mb-2 mt-11"><a href="https://github.com/vijayarun00100/student-performance">Source</a></button>
                         </div>
                     </li>
