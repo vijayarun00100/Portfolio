@@ -19,7 +19,7 @@ export default function experience(){
             <div className="xl:ml-48 md:ml-10 flex-row">
                 <h3 className="font-semibold text-3xl text-center sm:text-left">EXPERIENCE</h3>
                 <div className="flex sm:flex-row flex-col justtify-center items-center">
-                    <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-rows-3 gap-10 list-none mt-5 sm:mt-20">
+                    <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 grid-rows-3 gap-10 list-none mt-5 sm:mt-20">
                         <div className="flex flex-col text-center">
                             <div className=" bg-white/10 w-24 h-24 rounded-full">
                                 <img src={Tf.src} alt="tf" className="w-12 h-14 ml-6 mt-5" loading="lazy"></img>
