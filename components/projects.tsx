@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import Movie from "@/public/images/Movies.jpg"
+import Movie from "@/public/images/movies.jpg"
 import Student from "@/public/images/student.jpg"
 import Learning from "@/public/images/learning.jpg"
 import Property from "@/public/images/rent.jpg"
