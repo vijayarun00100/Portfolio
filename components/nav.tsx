@@ -1,10 +1,24 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import Open from "@/public/images/open.svg"
+import Close from "@/public/images/close.svg"
 export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const onToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
-    <div className="flex flex-col sm:flex-row py-3 list-none backdrop-blur-lg backdrop-opacity-100	backdrop-brightness-150 ">
-      <li className="hover:bg-slate-600 w-32 rounded-lg text-center ml-1 sm:ml-2 m-0 p-1 mr-0 text-white opacity-100 mt-1">
+    <div className="flex flex-col sm:flex-row list-none backdrop-blur-lg backdrop-opacity-100	backdrop-brightness-150 sm:h-auto sm:p-4 h-10 ">
+      <div className="flex">
+        <img src={Close.src} className="bg-cyan-400 w-10 h-10 ml-auto md:hidden cursor-pointer absolute right-0 rounded-sm duration-50 " onClick={onToggleMenu} style={{opacity: menuOpen ? 1 : 0 }}/>
+        <img src={Open.src} className="bg-white blur-10 rounded-sm w-10 h-10 ml-auto md:hidden cursor-pointer duration-50"/>
+      </div>
+      <ul className={`w-full flex md:flex-row flex-col bg-slate-700 sm:bg-transparent md:py-0 py-4 md:opacity-100 transition-all ease-in duration-50   ${
+          menuOpen ? 'opacity-100' : 'opacity-0'
+        } md:visible`}>
+      <li className="hover:bg-slate-600 w-32 rounded-lg text-center sm:ml-2 m-0 p-1 mr-0 ml-0 text-white md:mt-1 mt-1 ">
         <a href="https://github.com/vijayarun00100">
           <p>Github</p>
         </a>
@@ -14,15 +28,14 @@ export default function Nav() {
           Resume
         </a>
       </li>
-      <div className=" sm:w-2/3  bg-sky-700 dark:bg-sky-600 rounded-md hover:opacity-100 pointer-events-auto pl-2 ml-0">
-        <div className="flex	text-white text-left pl-5 pt-1 mt-1  antialiased font-medium ">
+      <div className=" sm:w-2/3  bg-sky-700 dark:bg-sky-600 rounded-md hover:opacity-100 pointer-events-auto pl-2 ml-0 ">
+        <div className="flex	text-white text-left pl-5 pt-1 mt-1 ml-2 md:ml-0 antialiased font-medium ">
           <h1>Vijay Arunachalam</h1>
           <button className=" hover:bg-sky-400 hover:px-1 hover:pl-2 px-1.5 py-0.5 rounded-md text-center ml-auto mr-2 mb-1	p-2 hover:h-auto">
             <Link href="#explore">
               Explore 🌍
             </Link>
           </button>
-          
         </div>
       </div>
       <li className="w-32 hover:bg-slate-600 rounded-lg text-center  ml-3 mr-3 p-1 text-white mt-1">
@@ -30,6 +43,7 @@ export default function Nav() {
             <p>Experience</p>
         </Link>
       </li>
+      </ul>
     </div>
   );
 }
