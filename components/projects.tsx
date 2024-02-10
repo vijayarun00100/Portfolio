@@ -1,13 +1,15 @@
 "use client"
-import React, { useEffect, useState, useRef } from "react"
-import git from "@/public/images/github.png"
-export default function project() {
-    const projectRef = useRef(null);
+import React, { useEffect, useState, useRef } from "react";
+import git from "@/public/images/github.png";
+
+export default function Project() {
+    const projectRef = useRef<HTMLDivElement>(null); // Provide type annotation here
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             if (
+                projectRef.current && // Check if projectRef.current exists
                 window.innerHeight + window.scrollY >= projectRef.current.offsetTop
             ) {
                 setIsVisible(true);
@@ -21,6 +23,7 @@ export default function project() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
     return (
         <div className="flex flex-col justify-center items-center">
             <div className="text-white text-center mt-20 font-semibold text-3xl">PROJECTS</div>
