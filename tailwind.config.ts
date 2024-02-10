@@ -56,10 +56,22 @@ const config: Config = {
           transform:"translateY(0)",
         },
       },
+
+      blink:{
+        "50%":{
+          opacity:"0",
+        },
+        "80%":{
+          opacity:"0.5",
+        },
+      },
+
+
       animation: {
         slide: "slide 60s linear infinite ",
         moveline : "moveline 10s linear forwards",
         movedown: "movedown 10s linear forwards",
+        blink:"blink 10s linear infinite",
       },
     },
   },
