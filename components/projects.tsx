@@ -1,61 +1,89 @@
 "use client"
-import React from "react"
-import Movie from "@/public/images/movies.jpg"
-import Student from "@/public/images/student.jpg"
-import Learning from "@/public/images/learning.jpg"
-import Property from "@/public/images/rent.jpg"
-import Groundwater from "@/public/images/groundwater.png"
-export default function project(){
-    return(
-        <div>
-            <h3 className=" text-white mt-16 font-semibold text-3xl text-center justify-center items-center">Projects</h3>
-            <div className="flex xl:flex-row justify-center items-center h-11/12 ">
-                <div className="grid xl:grid-rows-2 xl:grid-cols-3 gap-6 list-none mt-16">
-                <li className="bg-white/10 xl:w-96 w-72 md:w-96 h-11/12  rounded-2xl text-white flex flex-col mx-auto">
-                        <img src={Movie.src} alt="movie" className="w-96 h-96 rounded-2xl m-0" loading="lazy"/>
-                        <div className=" flex flex-col justify-center items-center">
-                            <h3 className="text-semibold text-2xl text-center">Movie Recommendation System</h3>
-                            <p className="text-center mt-10">Discover cinematic gems tailored to your taste with our Movie Recommendation System. Utilizing advanced axlorithms, it analyzes your viewing history and preferences to suggest a curated list of films, ensuring every movie night is a hit.Collabrative filtering is used to make the above !</p>  
-                            <button className=" bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 xl:mt-11 mb-2"><a href="https://github.com/vijayarun00100/movie-recommendation-system">Source</a></button>
-                        </div>
-                    </li>
-                    <li className="bg-white/10 xl:w-96 w-72 md:w-96 h-11/12  rounded-2xl text-white flex flex-col mx-auto ">
-                        <img src={Student.src} alt="student" className="w-96 h-96 rounded-2xl" loading="lazy"/>
-                        <div className="flex flex-col justify-center items-center">
-                            <h3 className="text-semibold text-2xl text-center">Students Performance Prediction </h3>
-                            <p className="text-center mt-10 ">Unlock the potential of personalized education with our Students Performance Prediction system. By harnessing data analytics and machine learning, we empower educators to forecast students' academic outcomes, enabling targeted interventions for success .</p>
-                            <button className=" bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 xl:mt-11 mb-2 mt-11"><a href="https://github.com/vijayarun00100/student-performance">Source</a></button>
-                        </div>
-                    </li>
-                    <li className="bg-white/10 xl:w-96 w-72 md:w-96 h-11/12  rounded-2xl text-white flex flex-col mx-auto justify-center items-center">
-                        <img src={Learning.src} alt="learning" className="w-96 h-96 rounded-2xl" loading="lazy"/>
-                        <div className="flex flex-col justify-center items-center">
-                            <h3 className="text-semibold text-2xl text-center">Decentralized Learning Platform </h3>
-                            <p className="text-center mt-10 ">Embrace the decentralized education revolution with our Learning Platform, fueled by blockchain for secure peer-to-peer learning. Liberate from centralized constraints, empower global learners through a borderless ecosystem, and actively shape the future of education!</p>
-                            <button className=" bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 xl:mt-11 mb-2 mt-11"><a href="https://github.com/vijayarun00100/student-performance">Source</a></button>
-                        </div>
-                    </li>
-                    <li className="bg-white/10 xl:w-96 w-72 md:w-96 h-11/12 rounded-2xl text-white flex flex-col mx-auto">
-                        <img src={Property.src} alt="Property" className="w-96 h-96 rounded-2xl" loading="lazy"/>
-                        <div className="flex flex-col justify-center items-center">      
-                            <h3 className="text-semibold text-2xl text-center">Decentralized Rental Properties</h3>
-                            <p className="text-center mt-10 ">Enter the future of leasing with our Decentralized Rental Properties platform. Utilizing blockchain, we remove intermediaries for a transparent, secure environment. Enjoy hassle-free transactions and xlart contracts in a revolutionary decentralized marketplace, offering autonomy and efficiency.</p>
-                            <button className=" bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 xl:mt-11 mb-2 mt-11"><a href="https://github.com/vijayarun00100/student-performance">Source</a></button>
-                        </div>  
-                    </li>
-                    <li className="bg-white/10 xl:w-96 w-72 md:w-96 h-11/12  rounded-2xl text-white flex flex-col mx-auto">
-                        <img src={Groundwater.src} alt="groundwater" className="w-96 h-96 rounded-2xl" loading="lazy"/>
-                        <div className="flex flex-col justify-center items-center">
-                            <h3 className="text-semibold text-2xl text-center">Groundwater Forecast System </h3>
-                            <p className="text-center mt-10 ">Elevate water resource management with our Groundwater Forecast System. Using advanced modeling and analytics, predict trends for sustainable groundwater utilization. Gain real-time insights to address challenges and revolutionize water management for a resilient future.</p>
-                            <button className=" bg-gradient-to-r from-blue-600 to-blue-400 hover:from-pink-500 hover:to-yellow-500 p-3 rounded-2xl w-24 h-14 xl:mt-11 mb-2 mt-11"><a href="https://github.com/vijayarun00100/student-performance">Source</a></button>
-                        </div>
-                    </li>
-                    {/* <li className="bg-white/10 w-96 h-96 rounded-2xl text-white flex justify-center items-center flex-col">
-                        <img src={Student.src} alt="student" className="w-96 h-96 rounded-2xl" />
-                    </li> */}
+import React, { useEffect, useState, useRef } from "react"
+import git from "@/public/images/github.png"
+export default function project() {
+    const projectRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (
+                window.innerHeight + window.scrollY >= projectRef.current.offsetTop
+            ) {
+                setIsVisible(true);
+                window.removeEventListener("scroll", handleScroll);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    return (
+        <div className="flex flex-col justify-center items-center">
+            <div className="text-white text-center mt-20 font-semibold text-3xl">PROJECTS</div>
+            <div ref={projectRef} className="relative max-w-6xl top-24 bottom-20 w-full">
+                <div className={`absolute h-full w-1 bg-white top-0 left-1/2 transform -translate-x-1/2 ${isVisible ? "animate-moveline" : ""}`} />
+
+
+                <div className="pt-10 pb-10 sm:pl-12 pl-2 pr-24 relative w-1/2  left-0 animate-movedown">
+                    <div className=" bg-white w-10 h-10 rounded-full absolute -right-5  z-10" />
+                    <a href="https://github.com/vijayarun00100/movie-recommendation-system"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute -right-5 z-10" /></a>
+                    <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12 bg-white rounded-lg text-base">
+                        <h2 className="font-semibold sm:text-xl">Movie recomendation system</h2>
+                        <small className="inline-block mb-15 mt-3 mb-2">Using ML</small>
+                    </div>
+                    <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent border-l-21  absolute sm:top-14 z-1 sm:right-20 right-0 top-24 border-white"></div>
                 </div>
+
+
+                <div className="pt-10 pb-10 sm:pl-24 sm:pr-12 pl-2 pr-24 relative w-1/2  sm:left-1/2 left-0 animate-movedown">
+                    <div className=" bg-white w-10 h-10 rounded-full absolute  sm:-left-5 -right-5 z-10" />
+                    <a href="https://github.com/vijayarun00100/student-performance"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute sm:-left-5 -right-5 z-10" /></a>
+                    <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12  bg-white relative rounded-lg text-base">
+                        <h2 className="font-semibold sm:text-xl">Students performance prediction</h2>
+                        <small className="inline-block mb-15 mt-3 mb-2">Using ML</small>
+                    </div>
+                    <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent sm:border-r-21 sm:border-l-0 border-l-21 border-white absolute sm:top-14 z-1 sm:left-20 right-0 top-24"></div>
+                </div>
+
+
+                <div className="pt-10 pb-10 sm:pl-12 pl-2 pr-24 relative w-1/2  left-0 animate-movedown">
+                    <div className=" bg-white w-10 h-10 rounded-full absolute -right-5  z-10" />
+                    <a href="https://github.com/vijayarun00100/Revahack"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute  -right-5 z-10" /></a>
+                    <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12 bg-white rounded-lg text-base">
+                        <h2 className="font-semibold sm:text-xl">Decentralized Learning Platform</h2>
+                        <small className="inline-block mb-15 mt-3 mb-2">Using ML</small>
+                    </div>
+                    <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent border-l-21  absolute sm:top-14 z-1 sm:right-20 right-0 top-24 border-white"></div>
+                </div>
+
+
+                <div className="pt-10 pb-10 sm:pl-24 sm:pr-12 pl-2 pr-24 relative w-1/2  sm:left-1/2 left-0 animate-movedown">
+                    <div className=" bg-white w-10 h-10 rounded-full absolute  sm:-left-5 -right-5 z-10" />
+                    <a href="https://github.com/PremSagarS/ethprop"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute sm:-left-5 -right-5 z-10" /></a>
+                    <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12  bg-white relative rounded-lg text-base">
+                        <h2 className="font-semibold sm:text-xl">Decentralized Rental Properties</h2>
+                        <small className="inline-block mb-15 mt-3 mb-2">Using Blockchain</small>
+                    </div>
+                    <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent sm:border-r-21 sm:border-l-0 border-l-21 border-white absolute sm:top-14 z-1 sm:left-20 right-0 top-24"></div>
+                </div>
+
+                <div className="pt-10 pb-10 sm:pl-12 pl-2 pr-24 relative w-1/2  left-0 animate-movedown">
+                    <div className=" bg-white w-10 h-10 rounded-full absolute -right-5  z-10" />
+                    <a href="https://github.com/vijayarun00100/WELL-IT-"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute -right-5 z-10" /></a>
+                    <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12 bg-white rounded-lg text-base">
+                        <h2 className="font-semibold sm:text-xl">Groundwater Forecast System</h2>
+                        <small className="inline-block mb-15 mt-3 mb-2">Using ML</small>
+                    </div>
+                    <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent border-l-21 absolute sm:top-14 z-1 sm:right-20 right-0 top-24 border-white"></div>
+                </div>
+
+
             </div>
+            <div className="pb-64" />
         </div>
     );
 }
