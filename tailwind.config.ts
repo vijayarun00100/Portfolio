@@ -66,7 +66,6 @@ const config: Config = {
         },
       },
 
-
       animation: {
         slide: "slide 60s linear infinite ",
         moveline : "moveline 10s linear forwards",
