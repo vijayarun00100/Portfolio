@@ -59,6 +59,7 @@ export default function Project() {
                     <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12 bg-white rounded-lg text-base">
                         <h2 className="font-semibold sm:text-xl">Decentralized Learning Platform</h2>
                         <small className="inline-block mb-15 mt-3 mb-2">Using ML</small>
+                        <p> Reva Hack 2024 - Finalist   </p>
                     </div>
                     <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent border-l-21  absolute sm:top-14 z-1 sm:right-20 right-0 top-24 border-white"></div>
                 </div>
@@ -70,6 +71,7 @@ export default function Project() {
                     <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12  bg-white relative rounded-lg text-base">
                         <h2 className="font-semibold sm:text-xl">Decentralized Rental Properties</h2>
                         <small className="inline-block mb-15 mt-3 mb-2">Using Blockchain</small>
+                        <p>House Of Developers - Finalist</p>
                     </div>
                     <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent sm:border-r-21 sm:border-l-0 border-l-21 border-white absolute sm:top-14 z-1 sm:left-20 right-0 top-24"></div>
                 </div>
@@ -80,6 +82,7 @@ export default function Project() {
                     <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12 bg-white rounded-lg text-base">
                         <h2 className="font-semibold sm:text-xl">Groundwater Forecast System</h2>
                         <small className="inline-block mb-15 mt-3 mb-2">Using ML</small>
+                        <p>Smart India Hackathon</p>
                     </div>
                     <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent border-l-21 absolute sm:top-14 z-1 sm:right-20 right-0 top-24 border-white"></div>
                 </div>

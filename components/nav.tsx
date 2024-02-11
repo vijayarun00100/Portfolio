@@ -32,7 +32,7 @@ export default function Nav() {
             <h1>Vijay Arunachalam</h1>
             <button className=" hover:bg-sky-400 hover:px-1 hover:pl-2 px-1.5 py-0.5 rounded-md text-center ml-auto mr-2 mb-1	p-2 hover:h-auto">
               <Link href="#explore">
-                Explore 🌍
+                Projects 🌍
               </Link>
             </button>
           </div>
