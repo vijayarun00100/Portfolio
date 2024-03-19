@@ -4,7 +4,7 @@ import About from "@/components/about";
 import Experience from "@/components/experience";
 import Project from "@/components/projects";
 import Contact from "@/components/contact";
-
+import Honors from "@/components/honors"
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -13,10 +13,11 @@ export default function Home() {
       <About />
       <section id="experience">
         <Experience />
-      </section> 
+      </section>
       <section id="explore">
         <Project />
       </section>
+      <Honors />
       <Contact />
     </div>
   );

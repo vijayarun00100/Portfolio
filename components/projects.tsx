@@ -30,7 +30,6 @@ export default function Project() {
             <div ref={projectRef} className="relative max-w-6xl top-24 bottom-20 w-full">
                 <div className={`absolute h-full w-1 bg-white top-0 left-1/2 transform -translate-x-1/2 ${isVisible ? "animate-moveline" : ""}`} />
 
-
                 <div className="pt-10 pb-10 sm:pl-12 pl-2 pr-24 relative w-1/2  left-0 animate-movedown">
                     <div className=" bg-white w-10 h-10 rounded-full absolute -right-5  z-10" />
                     <a href="https://github.com/vijayarun00100/movie-recommendation-system"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute -right-5 z-10" /></a>
@@ -89,7 +88,7 @@ export default function Project() {
 
 
             </div>
-            <div className="pb-64" />
+            <div className="pb-56" />
         </div>
     );
 }
