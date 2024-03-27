@@ -8,7 +8,7 @@ export default function intro() {
         <div className="flex overflow-hidden mb-10">
             <div className="sm:absolute sm:bg-blue-700/10 sm:w-96 sm:bg-opacity-10 sm:rounded-full sm:h-96 sm:blur-2xl sm:mt-20 sm:ml-20 sm:rotate-45 sm:mr-44"></div>
             <div className="flex md:ml-48 md:mr-10 items-center justify-center sm:flex-row flex-col ">
-                <div className="text-white sm:mt-32 mt-56 z-10 ml-3 md:ml-0 sm:mr-80 md:mr-24 sm:w-6/12">
+                <div className="text-white sm:mt-32 mt-16  ml-3 md:ml-0 sm:mr-80 md:mr-24 sm:w-6/12">
                     <p className="text-white text-4xl">HI🖖<span className="italic">,</span></p>
                     <div className="text-white text-4xl mt-5">
                         <TypeAnimation

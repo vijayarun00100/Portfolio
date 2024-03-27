@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Open from "@/public/images/open.svg"
 import Close from "@/public/images/close.svg"
+import Hamburger from 'hamburger-react'
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -10,13 +11,13 @@ export default function Nav() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className="flex flex-col sm:flex-row list-none backdrop-blur-lg backdrop-opacity-100	backdrop-brightness-150 sm:h-auto sm:p-4 h-10 ">
-      <div className="flex">
-        <img src={Close.src} className="bg-cyan-400 w-10 h-10 ml-auto md:hidden cursor-pointer absolute right-0  duration-50 " onClick={onToggleMenu} style={{ opacity: menuOpen ? 1 : 0 }} />
-        <img src={Open.src} className="bg-white/30 blur-10 w-10 h-10 ml-auto md:hidden cursor-pointer duration-50" />
+    <div className="flex flex-col relative sm:flex-row list-none backdrop-blur-lg backdrop-opacity-100	backdrop-brightness-150 sm:h-auto sm:p-4 h-10 ">
+      <div className=" text-white md:hidden">
+        {/* <img src={Close.src} className="bg-cyan-400 w-10 h-10 ml-auto md:hidden cursor-pointer absolute right-0  duration-50 " onClick={onToggleMenu} style={{ opacity: menuOpen ? 1 : 0 }} />
+        <img src={Open.src} className="bg-white/30 blur-10 w-10 h-10 ml-auto md:hidden cursor-pointer duration-50" /> */}
+        <Hamburger onToggle={onToggleMenu} size={24} />
       </div>
-      <ul className={`w-full flex md:flex-row flex-col bg-slate-700 sm:bg-transparent md:py-0 py-4 md:opacity-100 transition-all ease-in duration-50   ${menuOpen ? 'opacity-100' : 'opacity-0'
-        } md:visible`}>
+      <ul className={`w-full flex md:flex-row flex-col bg-slate-700 z-10 sm:bg-transparent md:py-0 py-4  transition-all ease-in duration-50 absolute md:mt-0 md:relative mt-10 md:opacity-100 ${menuOpen ? 'opacity-100' : 'opacity-0'}`}>
         <li className="hover:bg-slate-600 w-32 rounded-lg text-center sm:ml-2 m-0 p-1 mr-0 ml-0 text-white md:mt-1 mt-1 ">
           <a href="https://github.com/vijayarun00100">
             <p>Github</p>
