@@ -98,7 +98,7 @@ export default function Project() {
 
                 <div className="pt-10 pb-10 sm:pl-12 pl-2 pr-24 relative w-1/2  left-0 animate-movedown">
                     <div className=" bg-white w-10 h-10 rounded-full absolute -right-5  z-10" />
-                    <a href="https://github.com/vijayarun00100/movie-recommendation-system"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute -right-5 z-10" /></a>
+                    <a href="https://github.com/vijayarun00100/cps_hackathon"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute -right-5 z-10" /></a>
                     <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12 bg-white rounded-lg text-base">
                         <h2 className="font-semibold sm:text-xl">G-Assistant</h2>
                         <small className="inline-block mb-15 mt-3 mb-2">Using LLM '
