@@ -29,7 +29,7 @@ export default function Project() {
             <div className="text-white text-center mt-20 font-semibold text-3xl">PROJECTS</div>
             <div ref={projectRef} className="relative max-w-6xl top-24 bottom-20 w-full">
                 <div className={`absolute h-full w-1 bg-white top-0 left-1/2 transform -translate-x-1/2 ${isVisible ? "animate-moveline" : ""}`} />
-
+                
                 <div className="pt-10 pb-10 sm:pl-12 pl-2 pr-24 relative w-1/2  left-0 animate-movedown">
                     <div className=" bg-white w-10 h-10 rounded-full absolute -right-5  z-10" />
                     <a href="https://github.com/vijayarun00100/movie-recommendation-system"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute -right-5 z-10" /></a>
@@ -94,6 +94,18 @@ export default function Project() {
                         <p>DevsHouse'24 - Winner</p>
                     </div>
                     <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent sm:border-r-21 sm:border-l-0 border-l-21 border-white absolute sm:top-14 z-1 sm:left-20 right-0 top-24"></div>
+                </div>
+
+                <div className="pt-10 pb-10 sm:pl-12 pl-2 pr-24 relative w-1/2  left-0 animate-movedown">
+                    <div className=" bg-white w-10 h-10 rounded-full absolute -right-5  z-10" />
+                    <a href="https://github.com/vijayarun00100/movie-recommendation-system"><img src={git.src} alt="gitbhib" className=" w-10 h-10 rounded-full absolute -right-5 z-10" /></a>
+                    <div className="flex flex-col justify-center items-center text-center pt-10 pb-10 sm:pl-10 sm:pr-16 sm:mt-0 pr-16 pl-20 mt-12 bg-white rounded-lg text-base">
+                        <h2 className="font-semibold sm:text-xl">G-Assistant</h2>
+                        <small className="inline-block mb-15 mt-3 mb-2">Using LLM '
+                        Nous-Capybara-limarpv3-7B-GGUF'</small>
+                        <p>CPS Hackathon'24 - Winner</p>
+                    </div>
+                    <div className="sm:opacity-100 opacity-0 w-0 h-0 border-y-21 border-y-transparent border-l-21  absolute sm:top-14 z-1 sm:right-20 right-0 top-24 border-white"></div>
                 </div>
             </div>
             <div className="pb-56" />
